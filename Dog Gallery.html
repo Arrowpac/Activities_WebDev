@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Gallery</title>
+  <style>
+    h1{
+      margin-left: 20px;
+    }
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      row-gap: 30px;
+      column-gap: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+    .dogs{
+      border-radius: 8px;
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.09);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+    }
+    .dogs:hover{
+      cursor: pointer;
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5)
+    }
+    .dogs>img{
+      border-radius: 8px;
+      object-fit: cover;
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+    
+    @media(max-width: 900px){
+      .container{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media(max-width: 650px){
+      .container{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Dog Gallery</h1>
+  <br>
+  <div class="container">
+    <div class="dogs dogs1"><img src="https://hips.hearstapps.com/hmg-prod/images/shibainu-dog-royalty-free-image-1752089989.pjpeg?crop=1xw:1xh;center,top" alt=""></div>
+    <div class="dogs dogs2"><img src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-white-samoyed-sitting-on-boardwalk-royalty-free-image-1752090614.pjpeg?crop=0.606xw:0.912xh;0.100xw,0.0208xh" alt=""></div>
+    <div class="dogs dogs3"><img src="https://t3.ftcdn.net/jpg/03/37/46/98/360_F_337469861_iFRwd4Ia15Ihuwfa8fEDA9OKPhIVsgZR.jpg" alt=""></div>
+    <div class="dogs dogs4"><img src="https://gladdogsnation.com/cdn/shop/articles/59b0fa56ad3a4d580ab29edc07238723.jpg?v=1652426182" alt=""></div>
+    <div class="dogs dogs5"><img src="https://www.akc.org/wp-content/uploads/2017/11/Siberian-Husky-standing-outdoors-in-the-winter.jpg" alt=""></div>
+    <div class="dogs dogs6"><img src="https://hips.hearstapps.com/hmg-prod/images/best-guard-dogs-1650302456.jpeg?crop=0.754xw:1.00xh;0.0651xw,0&resize=1200:*" alt=""></div>
+    <div class="dogs dogs7"><img src="https://static.vecteezy.com/system/resources/thumbnails/008/951/892/small_2x/cute-puppy-pomeranian-mixed-breed-pekingese-dog-run-on-the-grass-with-happiness-photo.jpg" alt=""></div>
+    <div class="dogs dogs8"><img src="https://cdn.britannica.com/49/161649-050-3F458ECF/Bernese-mountain-dog-grass.jpg" alt=""></div>
+    <div class="dogs dogs9"><img src="https://www.forbes.com/advisor/wp-content/uploads/2023/11/shih-tzu-temperament.jpeg-900x510.jpg" alt=""></div>
+  </div>
+</body>
+</html>
